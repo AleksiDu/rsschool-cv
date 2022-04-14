@@ -1,5 +1,8 @@
 /* font-family: 'Plus Jakarta Sans', sans-serif;
 font-family: 'Ubuntu', sans-serif; */
+html {
+  scroll-behavior: smooth;
+}
 
 h1,
 h2,
@@ -17,7 +20,9 @@ li {
     font-family: 'Ubuntu', sans-serif;
     color: #4e4e4e;
     font-size: 1em;
-    line-height: 1.75em;
+    line-height: 1.65em;
+    margin-bottom: 1.65em;
+    list-style: none;
 }
 
 a:hover {
@@ -114,6 +119,55 @@ a:hover {
     }
 }
 
+.intro {
+  padding: 95px 0px 70px 0px;
+  overflow-x: hidden; }
+  .intro img {
+    align-items: right;
+    width: 80px;
+    height: 99px;
+    border-radius: 10%; }
+  .intro .wrap {
+    margin: 30px 0px; }
+  .intro h1:before {
+    position: absolute;
+    left: -220px;
+    top: -150px;
+    font-size: 270px;
+    z-index: -1;
+    color: #f4f4f4; }
+  .intro h1 span {
+    font-size: 47px; }
+.avatar-img {
+  margin-left: 0;
+  width: 20%;
+  vertical-align: middle;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  background: transparent;
+  box-sizing: border-box;
+  float: left;
+}
+.avatar {
+  width: 80%;
+  margin-left: 0;
+  float: left;
+  box-sizing: border-box;
+}
+
+p {
+  margin-bottom: 1.75em;
+}
+
+.unit-row {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .main-nav {
     background: #f4f4f4;
     padding-top: 23px;
@@ -137,7 +191,7 @@ a:hover {
 
 .section .container:after {
     position: absolute;
-    content: url(../img/separator.png);
+    content: url(/images/line-divider.png);
     left: 20px;
 }
 
@@ -197,7 +251,17 @@ footer .social li a {
     font-size: 1.25em;
     color: #999999;
 }
+.avatar-foot {
+  margin-left: 0;
+  width: 48.5%;
+  float: left;
+}
+.avatar-footer {
 
+  margin-left: 0;
+  list-style: none;
+  float: right;
+}
 
 -----------------------------------------------------------------------------*/
 /* NavBar */

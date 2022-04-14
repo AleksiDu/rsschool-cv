@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+	
 </head>
 
 <body>
@@ -36,13 +37,30 @@
 		</div>
 	</div>
 
+	<!-- Introduction -->
+	<div class="intro section" id="about">
+		<div class="container">
+			<p>Hi, I’m Aleksi Duluzauri</p>
+			<div class="units-row units-split wrap">
+				<div class="avatar-img">
+					<img src="images/IMG_2891.JPG" alt="Avatar">
+				</div>
+				<div class="avatar">
+					<h1>Beginner<br><span id="autoTyped"></span></h1>
+				</div>
+				<p>
+					I don’t have any work experience, but I had several courses on my hand -Harvard CS50, Freecodecamp JavaScript Algorithms, and Data Structures. For now, I am taking RS School’s JS/Front-end course
+				</p>
+			</div>
+		</div>
+	</div>
+
     <!-- Experience -->
 	<div class="experiences section second" id="experiences">
 		<div class="container">
 			<h1>Work Experiences</h1>
 			<ul class="experiences-list list-flat">
 				<li>2022</li>
-				<li>No relevant work experience</li>
 				<li>No relevant work experience</li>
 			</ul>
 		</div>
@@ -103,10 +121,10 @@
     <footer>
 		<div class="container">
 			<div class="units-row">
-			    <div class="unit-50">
-			    	<p>A.Duluzauri</p>
+			    <div class="avatar-foot">
+			    	<p>A.Duluzauri ©</p>
 			    </div>
-			    <div class="unit-50">
+			    <div class="avatar-footer">
 					<ul class="social list-flat right">
 						<li><a href="mailto:aleksi.duluzauri@gmail.com"><em class="fas fa-envelope"></em></a></li>
 						<li><a href="https://www.linkedin.com/in/aleksiduluzauri-4aaa2b175/"><em class="fab fa-linkedin"></em></a></li>
@@ -117,18 +135,18 @@
 		</div>
 	</footer>
 
-    <!-- Javascript -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/typed.min.js"></script>
-    <script src="js/kube.min.js"></script>
-    <script src="js/site.js"></script>
-    <script>
-		function newTyped(){}$(function(){$("#typed").typed({
-		// Change to edit type effect
-		strings: ["far northern sky", "your galaxy", "everywhere"],
+   
+	<!-- CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
-    </script>
+	<script>
+		var typed = new Typed("#autoTyped", {
+			strings: ["Web Developer"],
+			typeSpeed: 150,
+			backSpeed: 150,
+			loop: true
+		})
+	</script>
 
 </body>
 
