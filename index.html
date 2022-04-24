@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aleksi Duluzauri</title>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
     <!-- favicon -->
@@ -32,6 +33,8 @@
 				        <li><a href="#education">Education</a></li>
                         <li><a href="#courses">Courses</a></li>
 						<li><a href="#skills">Skills</a></li>
+						<li><a href="#example">Example</a></li>
+						<li><a href="#projects">Projects</a></li>
 				    </ul>
 				</nav>
 			</header>
@@ -115,6 +118,53 @@
             <h1>Language Skills</h1>
 			<ul class="skill-list list-flat">
 				<li>Georgian / English / Russian</li>
+			</ul>
+		</div>
+	</div>
+
+	    <!-- Code example -->
+		<div class="example section second" id="example">
+			<div class="container">
+				<h1>Code Example</h1>
+				<div class="example-js">
+					function rot13(str) {
+						<br>
+						let encode = "";
+						<br>
+						const input = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!?. ";
+						<br>
+						const output = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm!?. ";
+						<br>
+						<br>
+						for (let i = 0; i < str.length; i++){
+						<br>
+						  const index = input.indexOf(str[i]);
+						<br>
+						  encode += output[index];
+						<br>
+					  }
+					  <br>
+					  return encode;
+					  <br>
+					  }
+					  <br>
+					  <br>
+					  console.log(rot13("SERR PBQR PNZC"));
+				</div>
+			</div>
+		</div>
+
+		<!-- Projects -->
+	<div class="projects section second" id="projects">
+		<div class="container">
+			<h1>My Projects</h1>
+			<ul class="projects-list list-flat">
+				<li><a href="https://aleksidu.github.io/Tindog/">TinDog</a>
+					<br>HTML 81.0% CSS 19.0%</li>
+				<li><a href="https://github.com/AleksiDu/AlgorithmProjectsJS.git">freecodecamp JavaScript projects</a>
+					<br>JavaScript 100.0%</li>
+				<li><a href="https://AleksiDu.github.io/rsschool-cv">Personal CV</a>
+					<br>HTML 60.0% CSS 35.0% JavaScript 5.0%</li>
 			</ul>
 		</div>
 	</div>

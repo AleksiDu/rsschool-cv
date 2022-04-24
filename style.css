@@ -1,8 +1,17 @@
 /* font-family: 'Plus Jakarta Sans', sans-serif;
 font-family: 'Ubuntu', sans-serif; */
+:target {
+  scroll-margin-top: 10rem;
+}
+
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  margin: 0;
+}
+
 
 h1,
 h2,
@@ -157,6 +166,7 @@ a:hover {
   float: left;
 }
 .avatar {
+  max-width: 835px;
   width: 80%;
   margin-left: 0;
   float: left;
@@ -177,13 +187,12 @@ p {
     overflow: hidden;
     background: #f4f4f4;
     padding-top: 23px;
-    position: fixed;
+    position: sticky;
     width: 100%;
     right: 0;
     top: 0;
     display: block;
     z-index: +1;
-    
 }
 
 .main-nav nav ul li a {
@@ -206,13 +215,16 @@ p {
     position: absolute;
     content: url(images/line-divider.png);
     left: 20px;
+    max-width: 835px;
 }
 
 .section .container h1 {
     text-transform: uppercase;
     margin-bottom: 30px;
     position: relative;
+    margin-top: 0;
 }
+
 
 .experiences .experiences-list {
     margin-left: 0px;
@@ -248,6 +260,15 @@ p {
 .skills .skill-list li:first-child {
     font-size: 0.9375em;
     color: #4d4d4d;
+}
+
+.example-js {
+  padding: 1rem;
+  border-radius: 25px;
+  background-color: #f4f4f4;
+  margin: 16px 0px 16px;
+  font-family: Consolas,Menlo,"Courier New", Courier, monospace;
+  color: #4e4e4e;
 }
 
 
@@ -291,6 +312,7 @@ footer .social li a {
   font-size: 1.25em;
   max-height: 20px;
 }
+
 -----------------------------------------------------------------------------*/
 /* NavBar */
 .navbar {
