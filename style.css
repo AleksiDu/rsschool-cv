@@ -204,7 +204,7 @@ p {
 
 .section .container:after {
     position: absolute;
-    content: url(/images/line-divider.png);
+    content: url(images/line-divider.png);
     left: 20px;
 }
 
